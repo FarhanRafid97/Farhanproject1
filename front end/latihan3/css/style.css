@@ -1,0 +1,141 @@
+
+
+body{
+    padding: 0;
+    margin: 0;
+    padding-bottom: 500px;
+}
+.container{
+    max-width: 900px;
+    margin: auto;
+    background-color: grey;
+    border:1px solid black;
+    margin-top: 20px;
+    height: 500px;
+    padding:25px;
+    box-sizing: border-box;
+
+}
+
+.content{
+    
+}
+
+.content1{
+    width: 30%;
+    height: 100px;
+    background-color: green;
+}
+.content2{
+    width: 30%;
+    height: 100px;
+    background-color: blue;
+}
+.content3{
+    width: 30%;
+    height: 100px;
+    background-color: yellow;
+}
+
+.container2{
+    max-width: 600px;
+    margin: auto;
+    background-color: grey;
+    border:1px solid black;
+    margin-top: 20px;
+    
+    display: flex;
+    justify-content: space-around;  
+    flex-wrap: wrap;
+}
+
+.kotak1{
+    margin:10px 0;
+    width: 23%;
+    height: 100px;
+    background-color: yellow;
+    box-sizing: border-box;
+    display: flex;
+}
+.kotak1 span{
+  margin:auto;
+}
+.foto{
+    background-color: hotpink;
+    height: 90px;
+}
+
+
+.container3{
+    max-width: 900px;
+    border:1px solid black;
+    margin-top: 20px;
+    height: 100vh;
+    padding:25px;
+    box-sizing: border-box;
+   
+
+    
+
+}
+
+.card{
+    max-width: 12rem;
+    height: 180px;
+    border:1px solid black ;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 2%;
+    overflow: hidden;
+    box-shadow: 20px 20px 35px #d0d0d0;
+    
+ 
+}
+
+.card.besar{
+    transform: scale(1.15);
+
+}
+.content{
+    margin-top: -15px;
+    padding-bottom: 25px;
+}
+
+button{
+    margin-top: -30px;
+}
+
+@media(min-width: 600px) {
+    .container
+{
+    display: flex;
+justify-content: space-around;
+background-color: red;
+}
+.container3{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+   
+}
+.card.besar{
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+@media(max-width: 600px){
+    .container3{
+        margin: auto;
+    
+        justify-content: space-around;
+    }
+
+    .card{
+        margin-top: ;
+    }
+
+    .card.besar{
+        position: absolute;
+        top:65rem;
+    }
+}

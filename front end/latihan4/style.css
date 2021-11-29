@@ -1,0 +1,122 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	font-family: didot;
+	 font-size: 21px;
+}
+nav {
+    max-width: 1600px;
+    margin: auto;
+	display: flex;
+	
+	justify-content: space-around;
+	height: 50px;
+	color: rgb(128, 0, 0);
+	letter-spacing: 1px;
+	align-items: center;
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    
+
+}
+
+
+nav ul {
+	
+	display: flex;
+	list-style: none;
+	width: 20%;
+	justify-content: space-between;
+    margin-left: 250px;
+}
+
+
+nav ul li a {
+	color: rgb(128, 0, 0);
+	text-decoration: none;
+	font-size: 0.9em
+}
+
+nav ul li a:hover {
+	color: rgb(5, 255, 255);
+}
+
+
+.menu-toggle {
+	display: flex;
+	flex-direction: column;
+	height: 20px;
+	justify-content: space-between;
+	position: relative;
+    margin-right: 80px;
+}
+.menu-toggle input{
+	position: absolute;
+	width: 36px;
+	height: 30px;
+	left: -6px;
+	top:-3px;
+	opacity: 0;
+}
+
+.menu-toggle span{
+	display: block;
+	width: 28px;
+	height: 3px;
+	background-color: rgb(2, 2, 2);
+	border-radius: 3px;
+	transition: all 0.5s;
+
+}
+
+.menu-toggle span:nth-child(2){
+	transform-origin:  0 0;
+}
+.menu-toggle span:nth-child(4){
+	transform-origin: 0 100%;
+}
+.menu-toggle input:checked ~ span:nth-child(2){
+	background-color: black;
+	transform: rotate(45deg) translate(-1px, -1px);
+}
+.menu-toggle input:checked ~ span:nth-child(4){
+	background-color: black;
+	transform: rotate(-45deg) translate(-1px, 0);
+}
+.menu-toggle input:checked ~ span:nth-child(3){
+	transform: scale(0);
+}
+
+/*ukutran table */
+
+@media screen and (min-width: 768px){
+    nav{
+        margin-top: 40px;
+    padding-bottom: 30px;
+    }
+    .logo{
+
+        margin-right: 590px;
+        }
+
+    
+    nav ul{
+    margin-left: 250px;
+    }
+    .menu-toggle{
+        margin-right: 80px;
+}
+}
+@media screen and (max-width: 768px){
+	nav ul{
+		width: 50%;
+	}
+	@media screen and (max-width: 576px){
+	nav ul{
+		display: none;
+	}
+}
