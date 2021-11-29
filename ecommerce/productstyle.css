@@ -1,0 +1,163 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.navbar{
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+nav{
+	flex:1;
+	text-align: right;
+}
+.header .row{
+	margin-top: 140px;
+}
+nav ul{
+	display: inline-block;
+	list-style-type: none;
+}
+
+nav ul li{
+	display: inline-block;
+	margin-left: 25px;
+	font-size: 20px;
+
+}
+nav ul li a{
+	text-decoration: none;
+	color: black;
+	transition: color 0.5s;
+}
+
+nav ul li a:hover{
+	color: #A9A9A9;
+}
+.container-1{
+	max-width: 1700px;
+	margin: auto;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+.icon1{
+	margin-left: 25px;
+}
+.menu-icon{
+	width: 25px;
+	margin-left: 10px;
+}
+
+.container{
+	max-width: 1800px;
+	margin: auto;
+	padding-top: 100px;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+.row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.col-2{
+	align-items: center;
+	position: relative;
+	flex-basis: 50%;
+	min-width: 300px;
+	width: 100%;
+	margin-bottom: 500px;
+ }
+
+
+.col-2 img{
+	max-width: 50%;
+	margin-left: 300px;
+
+}
+
+.col-2 form{
+	font-size: 50px;
+	line-height: 60px;
+	margin-right: 250px;
+}
+.col-2 h4{
+	position: relative;
+	font-size: 50px;
+	}
+
+
+.btn{
+		text-decoration: none;
+	display:inline-block;
+	background: #000000;
+	color: #F0FFFF;
+	padding: 8px 20px;
+	margin: 20px 0;
+	border-radius: 30px;
+	transition: background 0.5s;
+}
+.btn:hover{
+	background: #A9A9A9;
+}
+
+
+}
+.small-container{
+	max-width: 1000px;
+	margin: auto;
+	flex-basis: 20%;
+}
+
+.col-4{
+	flex-basis: 25%;
+	padding: 10px;
+	min-width: 200px;
+	margin-bottom: 70px;
+	transition: transform 0.5s;
+}
+
+.col-4 img{
+	width: 80%;
+}
+
+.tittle{
+	text-align: center;
+	margin:0 auto 80px;
+	position: relative;
+	line-height: 60px;
+	color: #555;
+}
+
+.tittle::after{
+	content: '';
+	background: #8B0000;
+	width: 90px;
+	height: 5px;
+	border-radius:5px;
+	position:absolute;
+	bottom: 10%;
+	left: 50%;
+	transform: translateX(-50%);
+
+}
+
+h4{
+	color: #555;
+	font-weight: normal;
+}
+
+.col-4 p {
+	font-size: 14px;
+}
+
+.rating .fas{
+	color:  #8B0000;
+}
+
+.col-4:hover{
+	transform: translateY(-5px);
+}
